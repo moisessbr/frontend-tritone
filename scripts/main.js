@@ -10,13 +10,13 @@ let interval;
 
 
 function checkWidth() {
-  slideSize = slider.width();
+  slideSize = slide.width();
 }
 
 checkWidth();
 
 $(window).resize(checkWidth);
-
+$(slide).resize(checkWidth);
 
 
 
@@ -83,4 +83,41 @@ function showAllCards() {
   $('.card').show("fast");
 }
 
+//menu toggle - smart menu
+let menu = false;
 
+let windowSize = $(window).width();
+
+let menuSmart = false;
+
+
+function menuMobile() {
+  if (!menuSmart) {
+    $('.menu-toggle i').removeClass('fa-bars').addClass('fa-times');
+    $('.menu-mobile').show();
+    $('html').toggleClass('menu-active');
+    menuSmart = true;
+  } else {
+    $('.menu-toggle i').removeClass('fa-times').addClass('fa-bars');
+    $('.menu-mobile').hide();
+    $('html').removeClass('menu-active');
+    menuSmart = false;
+  }
+}
+
+$('.menu-toggle').on('click touchstart', function (e) {
+  if (windowSize <= 600) {
+    menuMobile();
+    return;
+  }
+  if (!menu) {
+    $('i', this).removeClass('fa-bars').addClass('fa-times');
+    $('.menu').show();
+    menu = true;
+  } else {
+    $('i', this).removeClass('fa-times').addClass('fa-bars');
+    menu = false;
+    $('.menu').hide();
+  }
+  e.preventDefault();
+});
