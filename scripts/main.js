@@ -8,24 +8,22 @@ const pause = 6000;
 let currentSlide = 0;
 let interval;
 
-
+//Verifica a largura da página
 function checkWidth() {
   slideSize = slide.width();
 }
-
 checkWidth();
-
 $(window).resize(checkWidth);
 $(slide).resize(checkWidth);
 
-
-
+//Troca o slide conforme os dot buttons
 function setSlide(number) {
   currentSlide = number;
   margin = -slideSize;
   slides.css('margin-left', number * margin);
 }
 
+//Anima os slides
 function startSlider() {
   interval = setInterval(function () {
     slides.animate({ 'margin-left': '-=' + slideSize }, 2000, function () {
@@ -37,7 +35,7 @@ function startSlider() {
     });
   }, pause);
 }
-
+//Para a animação dos slides
 function stopSlider() {
   clearInterval(interval);
 }
@@ -90,7 +88,7 @@ let windowSize = $(window).width();
 
 let menuSmart = false;
 
-
+//Controle do SmartMenu
 function menuMobile() {
   if (!menuSmart) {
     $('.menu-toggle i').removeClass('fa-bars').addClass('fa-times');
@@ -104,7 +102,7 @@ function menuMobile() {
     menuSmart = false;
   }
 }
-
+//Controle do Menu Absolute Toggle
 $('.menu-toggle').on('click touchstart', function (e) {
   if (windowSize <= 600) {
     menuMobile();
