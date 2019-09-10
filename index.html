@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Teste Tritone</title>
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <script src="https://kit.fontawesome.com/424db88c33.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <img src="assets/logo.png" alt="logo" />
+    <span class="menu-toggle-color">
+      <i class="fas fa-bars fa-2x"></i>
+      Menu
+    </span></button>
+  </header>
+  <main class="main">
+    <nav class="menu">
+      <button class="button-red">Abra sua conta<span class="chevron-right-icon-min">
+          <i class="fas fa-chevron-right fa-1x"></i>
+        </span></button>
+      <ul class="menu-items">
+        <li class="menu-items-item">Sobre o Cliente Lorem IPSUM</li>
+        <li class="menu-items-item product-services-title">Produtos e Serviços</li>
+        <ul class="products-services">
+          <li class="products-services-item">Ações</li>
+          <li class="products-services-item">Capitalização Classic</li>
+          <li class="products-services-item">Cesta de Serviços e Tarifas</li>
+          <li class="products-services-item">Empréstimos e Financiamentos</li>
+          <li class="products-services-item">Vendas de Imóveis e Bens</li>
+          <li class="products-services-item">Vida e Previdência</li>
+        </ul>
+        <li class="menu-items-item">Promoções</li>
+        <li class="menu-items-item">Educação Financeira</li>
+        <li class="menu-items-item">Campanhas e Promoções Classic</li>
+        <li class="menu-items-item">Canais Digitais</li>
+        <li class="menu-items-item">Contas</li>
+        <li class="menu-items-item">Consórcio</li>
+      </ul>
+    </nav>
+    <section class="slide">
+      <ul class="slide-image">
+        <li class="slide-image-item"><img src="assets/slides/01.jpg" alt="slide">
+          <div class="slide-wrapper">
+            <article class="slide-item">
+              <h2 class="slide-item-title">Saiba mais sobre o cliente</h2>
+              <p class="slide-item-text">Lorem ipsum dolur sit amet iorem</p>
+              <button class="slide-item-button"> Clique aqui e saiba mais <span class="chevron-right-icon">
+                  <i class="fas fa-chevron-right fa-2x"></i>
+                </span>
+              </button>
+            </article>
+          </div>
+        </li>
+        <li class="slide-image-item"><img src="assets/slides/02.jpg" alt="slide">
+          <div class="slide-wrapper">
+            <article class="slide-item">
+              <h2 class="slide-item-title">Enquanto sua economia cresce</h2>
+              <p class="slide-item-text">Duis eget ante in dolor semper</p>
+              <button class="slide-item-button"> Leia mais a respeito <span class="chevron-right-icon">
+                  <i class="fas fa-chevron-right fa-2x"></i>
+                </span>
+              </button>
+            </article>
+          </div>
+        </li>
+        <li class="slide-image-item"><img src="assets/slides/03.jpg" alt="slide">
+          <div class="slide-wrapper">
+            <article class="slide-item">
+              <h2 class="slide-item-title">Pensando sempre no seu futuro</h2>
+              <p class="slide-item-text">Curabitur scelerisque lobortis libero</p>
+              <button class="slide-item-button">Previdência Privada <span class="chevron-right-icon">
+                  <i class="fas fa-chevron-right fa-2x"></i>
+                </span>
+              </button>
+            </article>
+          </div>
+        </li>
+        <li class="slide-image-item"><img src="assets/slides/04.jpg" alt="slide">
+          <div class="slide-wrapper">
+            <article class="slide-item">
+              <h2 class="slide-item-title">Quando as contas não fecham</h2>
+              <p class="slide-item-text">Duis convallis, urna ut rutrum egestas</p>
+              <button class="slide-item-button">Fale com a gente <span class="chevron-right-icon">
+                  <i class="fas fa-chevron-right fa-2x"></i>
+                </span>
+              </button>
+            </article>
+          </div>
+        </li>
+      </ul>
+      <div class="slide-controller-wrapper">
+        <div class="slide-controller">
+          <div class="slide-controller-item slide-0" onclick="setSlide(0)"></div>
+          <div class="slide-controller-item slide-1" onclick="setSlide(1)"></div>
+          <div class="slide-controller-item slide-1" onclick="setSlide(2)"></div>
+          <div class="slide-controller-item slide-1" onclick="setSlide(3)"></div>
+        </div>
+      </div>
+
+    </section>
+    <section class=" categories">
+      <div class="categories-wrapper">
+        <h2 class="categories-title">Conteúdos especialmente selecionados para você!</h2>
+        <section class="categories-filter">
+          <button class="category-filter category-1">
+            <span class="color-category-1">
+              <i class="fas fa-apple-alt fa-2x"></i>
+              <span class="button-text">Categoria 1</span>
+            </span>
+
+          </button>
+          <button class="category-filter category-2">
+            <span class="color-category-2">
+              <i class="fas fa-gift fa-2x"></i>
+              <span class="button-text"> Categoria 2</span>
+
+            </span>
+          </button>
+          <button class="category-filter category-all activated-filter">
+            <span class="color-category-all">
+              <i class="fas fa-box-open fa-2x"></i>
+              <span class="button-text">Todos</span>
+            </span>
+          </button>
+          <button class="category-filter category-3">
+            <span class="color-category-3">
+              <i class="fas fa-book fa-2x"></i>
+              <span class="button-text">Categoria 3</span>
+            </span>
+          </button>
+          <button class="category-filter category-4">
+            <span class="color-category-4">
+              <i class="fas fa-bicycle fa-2x"></i>
+              <span class="button-text">Categoria 4</span>
+            </span>
+          </button>
+        </section>
+      </div>
+    </section>
+    <section class="categories-card">
+      <div class="categories-card-wrapper">
+        <!-- Categoria 01 -->
+        <article class="card category-1">
+          <img class="card-image" src="assets/cards/01.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 1</h3>
+            <span class="card-icon color-category-1">
+              <i class="fas fa-apple-alt fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-1">
+          <img class="card-image" src="assets/cards/02.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 2</h3>
+            <span class="card-icon color-category-1">
+              <i class="fas fa-apple-alt fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-1">
+          <img class="card-image" src="assets/cards/03.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 3</h3>
+            <span class="card-icon color-category-1">
+              <i class="fas fa-apple-alt fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-1">
+          <img class="card-image" src="assets/cards/04.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 4</h3>
+            <span class="card-icon color-category-1">
+              <i class="fas fa-apple-alt fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-1">
+          <img class="card-image" src="assets/cards/05.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 5</h3>
+            <span class="card-icon color-category-1">
+              <i class="fas fa-apple-alt fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-1">
+          <img class="card-image" src="assets/cards/06.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 6</h3>
+            <span class="card-icon color-category-1">
+              <i class="fas fa-apple-alt fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <!-- Categoria 02 -->
+        <article class="card category-2">
+          <img class="card-image" src="assets/cards/01.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 1</h3>
+            <span class="card-icon color-category-2">
+              <i class="fas fa-gift fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-2">
+          <img class="card-image" src="assets/cards/02.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 2</h3>
+            <span class="card-icon color-category-2">
+              <i class="fas fa-gift fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-2">
+          <img class="card-image" src="assets/cards/03.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 3</h3>
+            <span class="card-icon color-category-2">
+              <i class="fas fa-gift fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-2">
+          <img class="card-image" src="assets/cards/04.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 4</h3>
+            <span class="card-icon color-category-2">
+              <i class="fas fa-gift fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-2">
+          <img class="card-image" src="assets/cards/05.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 5</h3>
+            <span class="card-icon color-category-2">
+              <i class="fas fa-gift fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-2">
+          <img class="card-image" src="assets/cards/06.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 6</h3>
+            <span class="card-icon color-category-2">
+              <i class="fas fa-gift fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <!-- Categoria 03 -->
+        <article class="card category-3">
+          <img class="card-image" src="assets/cards/01.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 1</h3>
+            <span class="card-icon color-category-3">
+              <i class="fas fa-book fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-3">
+          <img class="card-image" src="assets/cards/02.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 2</h3>
+            <span class="card-icon color-category-3">
+              <i class="fas fa-book fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-3">
+          <img class="card-image" src="assets/cards/03.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 3</h3>
+            <span class="card-icon color-category-3">
+              <i class="fas fa-book fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-3">
+          <img class="card-image" src="assets/cards/04.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 4</h3>
+            <span class="card-icon color-category-3">
+              <i class="fas fa-book fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-3">
+          <img class="card-image" src="assets/cards/05.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 5</h3>
+            <span class="card-icon color-category-3">
+              <i class="fas fa-book fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-3">
+          <img class="card-image" src="assets/cards/06.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 6</h3>
+            <span class="card-icon color-category-3">
+              <i class="fas fa-book fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <!-- Categoria 04 -->
+        <article class="card category-4">
+          <img class="card-image" src="assets/cards/01.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 1</h3>
+            <span class="card-icon color-category-4">
+              <i class="fas fa-bicycle fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-4">
+          <img class="card-image" src="assets/cards/02.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 2</h3>
+            <span class="card-icon color-category-4">
+              <i class="fas fa-bicycle fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-4">
+          <img class="card-image" src="assets/cards/03.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 3</h3>
+            <span class="card-icon color-category-4">
+              <i class="fas fa-bicycle fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-4">
+          <img class="card-image" src="assets/cards/04.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 4</h3>
+            <span class="card-icon color-category-4">
+              <i class="fas fa-bicycle fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-4">
+          <img class="card-image" src="assets/cards/05.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 5</h3>
+            <span class="card-icon color-category-4">
+              <i class="fas fa-bicycle fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+        <article class="card category-4">
+          <img class="card-image" src="assets/cards/06.jpg" alt="Imagem destaque 01" />
+          <div class="card-wrapper">
+            <h3 class="card-title">Destaque 6</h3>
+            <span class="card-icon color-category-4">
+              <i class="fas fa-bicycle fa-2x"></i>
+            </span>
+          </div>
+          <p class="card-text">Relembre princípios de gramática e ortografia</p>
+          <button class="card-button">Conheça o curso <span class="chevron-right-button-icon">
+              <i class="fas fa-chevron-right fa-1x"></i>
+            </span></button>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>
